@@ -12,7 +12,7 @@ const giftCards: GiftCard[] = [
       "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     price: "12,000€",
     forPersons: "Pour 2 personnes",
-    image: "/images/gift-card-1.jpg",
+    image: "/AdobeStock_59196237.png",
     category: "tous",
   },
   {
@@ -22,7 +22,7 @@ const giftCards: GiftCard[] = [
       "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     price: "12,000€",
     forPersons: "Pour 2 personnes",
-    image: "/images/gift-card-2.jpg",
+    image: "/AdobeStock_59196237@2x.png",
     category: "formules-repas",
   },
   {
@@ -32,7 +32,7 @@ const giftCards: GiftCard[] = [
       "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     price: "12,000€",
     forPersons: "Pour 2 personnes",
-    image: "/images/gift-card-3.jpg",
+    image: "/AdobeStock_59196237@2x.png",
     category: "repas-hebergement",
   },
 ];

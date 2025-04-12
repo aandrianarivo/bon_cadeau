@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 // import { useProgress } from "../../../context/ProgressContext";
 import Link from "next/link";
+import React from "react"; // Importer React pour utiliser React.use
 import { useProgress } from "@/src/context/ProgressContext";
 
 // Données simulées (remplacez par une API ou une base de données)
@@ -17,16 +18,40 @@ const giftCards = [
       { label: "34,400€ avec vins, hors apéro & café", value: 34400 },
     ],
     forPersons: "Pour 2 personnes",
-    image: "/images/gift-card-1.jpg",
+    image: "/AdobeStock_59196237.png", // Image mise à jour
   },
-  // Ajoutez d'autres bons cadeaux si nécessaire
+  {
+    id: 2,
+    title: "Chèque cadeau",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    priceOptions: [
+      { label: "12,000€ hors boissons", value: 12000 },
+      { label: "34,400€ avec vins, hors apéro & café", value: 34400 },
+    ],
+    forPersons: "Pour 2 personnes",
+    image: "/AdobeStock_59196237.png",
+  },
+  {
+    id: 3,
+    title: "Chèque cadeau",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    priceOptions: [
+      { label: "12,000€ hors boissons", value: 12000 },
+      { label: "34,400€ avec vins, hors apéro & café", value: 34400 },
+    ],
+    forPersons: "Pour 2 personnes",
+    image: "/AdobeStock_59196237.png",
+  },
 ];
 
-const GiftCardDetails = ({ params }: { params: { id: string } }) => {
+const GiftCardDetails = ({ params: paramsPromise }: { params: Promise<{ id: string }> }) => {
+  const params = React.use(paramsPromise); // Déballer la promesse params
   const { currentStep, setCurrentStep, setSelectedGiftCard } = useProgress();
   const router = useRouter();
   const [quantity, setQuantity] = useState<number>(1);
-  const [selectedOption, setSelectedOption] = useState<number>(0); // Index de l'option sélectionnée
+  const [selectedOption, setSelectedOption] = useState<number>(0);
 
   // Trouver le bon cadeau correspondant à l'ID
   const giftCard = giftCards.find((card) => card.id === parseInt(params.id));
@@ -37,7 +62,6 @@ const GiftCardDetails = ({ params }: { params: { id: string } }) => {
       router.push("/gift-card-selection");
       return;
     }
-    // Mettre à jour l'étape actuelle
     setCurrentStep(2);
     setSelectedGiftCard(parseInt(params.id));
   }, [giftCard, params.id, router, setCurrentStep, setSelectedGiftCard]);
@@ -48,7 +72,7 @@ const GiftCardDetails = ({ params }: { params: { id: string } }) => {
   const total = giftCard.priceOptions[selectedOption].value * quantity;
 
   const handleProceedToPayment = () => {
-    setCurrentStep(3); // Passer à l'étape "Paiement"
+    setCurrentStep(3);
     router.push("/payment");
   };
 
@@ -71,7 +95,6 @@ const GiftCardDetails = ({ params }: { params: { id: string } }) => {
               }`}
             >
               {currentStep > index + 1 ? (
-                // Icône de coche pour les étapes complétées
                 <svg
                   width="16"
                   height="16"
