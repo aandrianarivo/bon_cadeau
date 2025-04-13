@@ -249,7 +249,7 @@ const Payment = () => {
             </div>
           </div>
 
-\          <div className="mb-8">
+          <div className="mb-8">
             <label className="flex items-center space-x-2">
               <input
                 type="checkbox"
@@ -265,13 +265,16 @@ const Payment = () => {
               <p className="text-red-500 text-xs mt-1">{errors.terms}</p>
             )}
           </div>
+          
+          <div className="w-full flex justify-center align-center">
+            <button
+              type="submit"
+              className=" bg-brownlight text-white px-4 py-2 rounded-full text-sm"
+            >
+              Valider et payer
+            </button>
+          </div>
 
-          <button
-            type="submit"
-            className="w-full bg-brownlight text-white px-4 py-2 rounded-full text-sm"
-          >
-            Valider et payer
-          </button>
         </form>
       </div>
     </div>

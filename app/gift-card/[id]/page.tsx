@@ -36,13 +36,13 @@ const GiftCardDetails = ({ params: paramsPromise }: { params: Promise<{ id: stri
 
   return (
     <div className="bg-white py-6">
-      <div className="container mx-auto mb-6">
+      <div className="container p-2 mx-auto mb-6">
         <Link href={"/"} className="text-brownlight text-sm hover:underline">
           ← Revenir au choix du bon
         </Link>
       </div>
 
-      <div className="container mx-auto flex flex-col lg:flex-row gap-8">
+      <div className="container p-2 mx-auto flex flex-col lg:flex-row gap-8">
         <div className="lg:w-1/2">
           <img
             src={giftCard.image}
@@ -106,7 +106,7 @@ const GiftCardDetails = ({ params: paramsPromise }: { params: Promise<{ id: stri
         </div>
       </div>
 
-      <div className="container mx-auto mt-12">
+      <div className="container p-2 mx-auto mt-12">
         <h3 className="text-lg font-semibold text-brown">Description</h3>
         <p className="text-sm text-gray-600 mt-2">
           Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.

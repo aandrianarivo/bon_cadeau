@@ -1,9 +1,12 @@
 'use client';
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState } from "react";
 
 const Header: React.FC = () => {
   const [giftCardNumber, setGiftCardNumber] = useState<string>("");
   const [message, setMessage] = useState<string>("");
+  // const router = useRouter();
 
   const handleVerify = () => {
     if (giftCardNumber === "123456") {
@@ -12,6 +15,7 @@ const Header: React.FC = () => {
       setMessage("Numéro de bon cadeau invalide.");
     }
   };
+
 
   return (
     <header className="bg-background p-4">
@@ -37,9 +41,9 @@ const Header: React.FC = () => {
             <path d="M7 3c1.5 2 3 3 5 3s3.5-1 5-3" />
           </svg>
           <div>
-            <h1 className="text-[18px] font-semibold text-brown">
+            <Link href={'/'} className="text-[18px] font-semibold text-brown">
               Votre logo
-            </h1>
+            </Link>
             <p className="text-[14px] text-brownlight">Bon cadeau</p>
           </div>
         </div>
