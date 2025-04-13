@@ -4,7 +4,6 @@ import Header from "@/src/components/headers"
 const Home : React.FC = ()=>{
   return(
     <div>
-      <Header/>
       <GiftCardSelection/>
     </div>
   )

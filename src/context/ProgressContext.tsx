@@ -6,6 +6,12 @@ interface ProgressContextType {
   setCurrentStep: (step: number) => void;
   selectedGiftCard: number | null;
   setSelectedGiftCard: (id: number | null) => void;
+  giftCardDetails: {
+    for: string;
+    from: string;
+    selectedModel: number;
+  } | null;
+  setGiftCardDetails: (details: { for: string; from: string; selectedModel: number }) => void;
 }
 
 const ProgressContext = createContext<ProgressContextType | undefined>(undefined);
@@ -13,10 +19,22 @@ const ProgressContext = createContext<ProgressContextType | undefined>(undefined
 export const ProgressProvider = ({ children }: { children: ReactNode }) => {
   const [currentStep, setCurrentStep] = useState<number>(1);
   const [selectedGiftCard, setSelectedGiftCard] = useState<number | null>(null);
+  const [giftCardDetails, setGiftCardDetails] = useState<{
+    for: string;
+    from: string;
+    selectedModel: number;
+  } | null>(null);
 
   return (
     <ProgressContext.Provider
-      value={{ currentStep, setCurrentStep, selectedGiftCard, setSelectedGiftCard }}
+      value={{
+        currentStep,
+        setCurrentStep,
+        selectedGiftCard,
+        setSelectedGiftCard,
+        giftCardDetails,
+        setGiftCardDetails,
+      }}
     >
       {children}
     </ProgressContext.Provider>

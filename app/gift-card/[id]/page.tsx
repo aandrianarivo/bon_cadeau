@@ -1,7 +1,6 @@
 'use client';
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-// import { useProgress } from "../../../context/ProgressContext";
 import Link from "next/link";
 import React from "react"; // Importer React pour utiliser React.use
 import { useProgress } from "@/src/context/ProgressContext";
