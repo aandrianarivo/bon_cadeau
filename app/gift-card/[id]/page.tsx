@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import React from "react"; // Importer React pour utiliser React.use
 import { useProgress } from "@/src/context/ProgressContext";
+import Image from "next/image";
 
 // Données simulées (remplacez par une API ou une base de données)
 const giftCards = [
@@ -203,7 +204,7 @@ const giftCards = [
 
 const GiftCardDetails = ({ params: paramsPromise }: { params: Promise<{ id: string }> }) => {
   const params = React.use(paramsPromise); // Déballer la promesse params
-  const { currentStep, setCurrentStep, setSelectedGiftCard } = useProgress();
+  const { setCurrentStep, setSelectedGiftCard } = useProgress();
   const router = useRouter();
   const [quantity, setQuantity] = useState<number>(1);
   const [selectedOption, setSelectedOption] = useState<number>(0);
@@ -351,7 +352,7 @@ const GiftCardDetails = ({ params: paramsPromise }: { params: Promise<{ id: stri
       <div className="container mx-auto flex flex-col lg:flex-row gap-8">
         {/* Image */}
         <div className="lg:w-1/2">
-          <img
+          <Image
             src={giftCard.image}
             alt={giftCard.title}
             className="w-full h-96 object-cover rounded-lg"

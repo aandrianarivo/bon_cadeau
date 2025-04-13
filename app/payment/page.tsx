@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useProgress } from "@/src/context/ProgressContext";
+import Image from "next/image";
 
 const Payment = () => {
   const { currentStep, setCurrentStep, selectedGiftCard, setGiftCardDetails } = useProgress();
@@ -342,7 +343,7 @@ const Payment = () => {
                     onChange={() => setSelectedModel(model.id)}
                     className="absolute opacity-0"
                   />
-                  <img
+                  <Image
                     src={model.image}
                     alt={`Modèle ${model.id + 1}`}
                     className="w-full h-32 object-cover rounded-lg"

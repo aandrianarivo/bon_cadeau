@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { PDFDownloadLink } from "@react-pdf/renderer";
 import { useProgress } from "@/src/context/ProgressContext";
 import GiftCardPDF from "@/src/components/giftCardPdf";
+import Image from "next/image";
 // import GiftCardPDF from "../../components/GiftCardPDF";
 
 const Print = () => {
@@ -153,12 +154,12 @@ const Print = () => {
             </p>
           </div>
           <div>
-            <img
+            <Image
               src="https://via.placeholder.com/100x50?text=Votre+Logo"
               alt="Logo"
               className="w-24 h-12 mb-4"
             />
-            <img
+            <Image
               src="https://via.placeholder.com/80?text=QR+Code"
               alt="QR Code"
               className="w-20 h-20"

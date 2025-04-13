@@ -1,11 +1,9 @@
 'use client';
 import { useProgress } from "../context/ProgressContext";
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const ProgressBar = () => {
   const { currentStep } = useProgress();
-  const pathname = usePathname();
   const [hydrated, setHydrated] = useState(false); // État pour vérifier l'hydratation
 
   // S'assurer que le composant est hydraté avant de rendre les éléments dynamiques

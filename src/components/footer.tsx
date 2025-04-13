@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
@@ -31,10 +32,10 @@ const Footer = () => {
             <span className="text-gray-600 text-xs mb-2">Paiement sécurisé :</span>
             <div className="flex space-x-4">
               {/* Icônes de paiement avec vos images */}
-              <img src="/icons/visa.png" alt="Visa" className="h-6" />
-              <img src="/icons/mastercard.png" alt="Mastercard" className="h-6" />
-              <img src="/icons/cb.png" alt="CB" className="h-6" />
-              <img src="/icons/stripe.png" alt="Stripe" className="h-6" />
+              <Image src="/ressource_footer/visa-2.png" alt="Visa" className="h-6" />
+              <Image src="/ressource_footer/" alt="Mastercard" className="h-6" />
+              <Image src="/icons/cb.png" alt="CB" className="h-6" />
+              <Image src="/icons/stripe.png" alt="Stripe" className="h-6" />
             </div>
           </div>
 
