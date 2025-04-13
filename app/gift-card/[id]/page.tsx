@@ -43,6 +43,162 @@ const giftCards = [
     forPersons: "Pour 2 personnes",
     image: "/AdobeStock_59196237.png",
   },
+  {
+    id: 4,
+    title: "Chèque cadeau",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    priceOptions: [
+      { label: "12,000€ hors boissons", value: 12000 },
+      { label: "34,400€ avec vins, hors apéro & café", value: 34400 },
+    ],
+    forPersons: "Pour 2 personnes",
+    image: "/AdobeStock_59196237.png",
+  },
+  {
+    id: 5,
+    title: "Chèque cadeau",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    priceOptions: [
+      { label: "12,000€ hors boissons", value: 12000 },
+      { label: "34,400€ avec vins, hors apéro & café", value: 34400 },
+    ],
+    forPersons: "Pour 2 personnes",
+    image: "/AdobeStock_59196237.png",
+  },
+  {
+    id: 3,
+    title: "Chèque cadeau",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    priceOptions: [
+      { label: "12,000€ hors boissons", value: 12000 },
+      { label: "34,400€ avec vins, hors apéro & café", value: 34400 },
+    ],
+    forPersons: "Pour 2 personnes",
+    image: "/AdobeStock_59196237.png",
+  },
+  {
+    id: 6,
+    title: "Chèque cadeau",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    priceOptions: [
+      { label: "12,000€ hors boissons", value: 12000 },
+      { label: "34,400€ avec vins, hors apéro & café", value: 34400 },
+    ],
+    forPersons: "Pour 2 personnes",
+    image: "/AdobeStock_59196237.png",
+  },
+  {
+    id: 7,
+    title: "Chèque cadeau",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    priceOptions: [
+      { label: "12,000€ hors boissons", value: 12000 },
+      { label: "34,400€ avec vins, hors apéro & café", value: 34400 },
+    ],
+    forPersons: "Pour 2 personnes",
+    image: "/AdobeStock_59196237.png",
+  },
+  {
+    id: 8,
+    title: "Chèque cadeau",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    priceOptions: [
+      { label: "12,000€ hors boissons", value: 12000 },
+      { label: "34,400€ avec vins, hors apéro & café", value: 34400 },
+    ],
+    forPersons: "Pour 2 personnes",
+    image: "/AdobeStock_59196237.png",
+  },
+  {
+    id: 3,
+    title: "Chèque cadeau",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    priceOptions: [
+      { label: "12,000€ hors boissons", value: 12000 },
+      { label: "34,400€ avec vins, hors apéro & café", value: 34400 },
+    ],
+    forPersons: "Pour 2 personnes",
+    image: "/AdobeStock_59196237.png",
+  },
+  {
+    id: 3,
+    title: "Chèque cadeau",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    priceOptions: [
+      { label: "12,000€ hors boissons", value: 12000 },
+      { label: "34,400€ avec vins, hors apéro & café", value: 34400 },
+    ],
+    forPersons: "Pour 2 personnes",
+    image: "/AdobeStock_59196237.png",
+  },
+  {
+    id: 3,
+    title: "Chèque cadeau",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    priceOptions: [
+      { label: "12,000€ hors boissons", value: 12000 },
+      { label: "34,400€ avec vins, hors apéro & café", value: 34400 },
+    ],
+    forPersons: "Pour 2 personnes",
+    image: "/AdobeStock_59196237.png",
+  },
+  {
+    id: 9,
+    title: "Chèque cadeau",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    priceOptions: [
+      { label: "12,000€ hors boissons", value: 12000 },
+      { label: "34,400€ avec vins, hors apéro & café", value: 34400 },
+    ],
+    forPersons: "Pour 2 personnes",
+    image: "/AdobeStock_59196237.png",
+  },
+  {
+    id: 10,
+    title: "Chèque cadeau",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    priceOptions: [
+      { label: "12,000€ hors boissons", value: 12000 },
+      { label: "34,400€ avec vins, hors apéro & café", value: 34400 },
+    ],
+    forPersons: "Pour 2 personnes",
+    image: "/AdobeStock_59196237.png",
+  },
+  {
+    id: 11,
+    title: "Chèque cadeau",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    priceOptions: [
+      { label: "12,000€ hors boissons", value: 12000 },
+      { label: "34,400€ avec vins, hors apéro & café", value: 34400 },
+    ],
+    forPersons: "Pour 2 personnes",
+    image: "/AdobeStock_59196237.png",
+  },
+  {
+    id: 12,
+    title: "Chèque cadeau",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    priceOptions: [
+      { label: "12,000€ hors boissons", value: 12000 },
+      { label: "34,400€ avec vins, hors apéro & café", value: 34400 },
+    ],
+    forPersons: "Pour 2 personnes",
+    image: "/AdobeStock_59196237.png",
+  }
 ];
 
 const GiftCardDetails = ({ params: paramsPromise }: { params: Promise<{ id: string }> }) => {
@@ -85,7 +241,7 @@ const GiftCardDetails = ({ params: paramsPromise }: { params: Promise<{ id: stri
   return (
     <div className="bg-white py-6">
       {/* Barre de progression */}
-      <div className="container mx-auto flex justify-center items-center space-x-4 mb-8">
+      {/* <div className="container mx-auto flex justify-center items-center space-x-4 mb-8">
         {steps.map((step, index) => (
           <div key={index} className="flex items-center">
             <div
@@ -182,11 +338,11 @@ const GiftCardDetails = ({ params: paramsPromise }: { params: Promise<{ id: stri
             )}
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* Lien de retour */}
       <div className="container mx-auto mb-6">
-        <Link href="/gift-card-selection" className="text-brownlight text-sm hover:underline">
+        <Link href={"/"} className="text-brownlight text-sm hover:underline">
           ← Revenir au choix du bon
         </Link>
       </div>

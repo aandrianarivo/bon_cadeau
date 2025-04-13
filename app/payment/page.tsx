@@ -86,7 +86,7 @@ const Payment = () => {
   return (
     <div className="bg-white py-6">
       {/* Barre de progression */}
-      <div className="container mx-auto flex justify-center items-center space-x-4 mb-8">
+      {/* <div className="container mx-auto flex justify-center items-center space-x-4 mb-8">
         {steps.map((step, index) => (
           <div key={index} className="flex items-center">
             <div
@@ -183,7 +183,7 @@ const Payment = () => {
             )}
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* Lien de retour */}
       <div className="container mx-auto mb-6">
@@ -207,7 +207,7 @@ const Payment = () => {
       <div className="container mx-auto">
         <form onSubmit={handleSubmit}>
           {/* Section 1 : Identité de l'acheteur */}
-          <div className="mb-8">
+          <div className="mb-8 border p-5 rounded-xl">
             <h3 className="text-lg font-semibold text-brown mb-4">
               1 Identité de l’acheteur du bon cadeau:
             </h3>
@@ -280,7 +280,7 @@ const Payment = () => {
           </div>
 
           {/* Section 2 : Informations présentes sur le bon cadeau */}
-          <div className="mb-8">
+          <div className="mb-8 border p-5 rounded-xl">
             <h3 className="text-lg font-semibold text-brown mb-4">
               2 Informations présentes sur le bon cadeau:
             </h3>

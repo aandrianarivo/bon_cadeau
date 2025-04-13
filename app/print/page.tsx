@@ -34,7 +34,7 @@ const Print = () => {
   return (
     <div className="bg-white py-6">
       {/* Barre de progression */}
-      <div className="container mx-auto flex justify-center items-center space-x-4 mb-8">
+      {/* <div className="container mx-auto flex justify-center items-center space-x-4 mb-8">
         {steps.map((step, index) => (
           <div key={index} className="flex items-center">
             <div
@@ -131,7 +131,7 @@ const Print = () => {
             )}
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* Numéro du bon cadeau */}
       <div className="container mx-auto text-center mb-8">
