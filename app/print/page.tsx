@@ -25,12 +25,12 @@ const Print = () => {
 
   if (!giftCardDetails) return null;
 
-  const steps = [
-    { label: "Choisissez un bon", icon: "gift" },
-    { label: "Informations sur le bon", icon: "info" },
-    { label: "Paiement", icon: "payment" },
-    { label: "Imprimer votre bon", icon: "print" },
-  ];
+  // const steps = [
+  //   { label: "Choisissez un bon", icon: "gift" },
+  //   { label: "Informations sur le bon", icon: "info" },
+  //   { label: "Paiement", icon: "payment" },
+  //   { label: "Imprimer votre bon", icon: "print" },
+  // ];
 
   return (
     <div className="bg-white py-6">
