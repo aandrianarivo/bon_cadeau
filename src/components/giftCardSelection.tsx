@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useProgress } from "../context/ProgressContext";
 import { GiftCard } from "../types";
+import Image from "next/image";
 
 const giftCards: GiftCard[] = [
   {
@@ -353,7 +354,7 @@ const GiftCardSelection: React.FC = () => {
 
     // Calculer la plage de pages à afficher
     let startPage = Math.max(1, currentPage - 1);
-    let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+    const endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
 
     // Ajuster startPage si on est proche de la fin
     if (endPage - startPage + 1 < maxVisiblePages) {
@@ -429,7 +430,7 @@ const GiftCardSelection: React.FC = () => {
               key={card.id}
               className="bg-white rounded-2xl shadow-md overflow-hidden"
             >
-              <img
+              <Image
                 src={card.image}
                 alt={card.title}
                 className="w-full h-48 object-cover rounded-t-2xl"
