@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "title": "Chèque cadeau",
+    "description": "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "priceOptions": [
+      { "label": "12,000€ hors boissons", "value": 12000 },
+      { "label": "34,400€ avec vins, hors apéro & café", "value": 34400 }
+    ],
+    "forPersons": "Pour 2 personnes",
+    "image": "/AdobeStock_59196237.png"
+  },
+  {
+    "id": 2,
+    "title": "Chèque cadeau",
+    "description": "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "priceOptions": [
+      { "label": "12,000€ hors boissons", "value": 12000 },
+      { "label": "34,400€ avec vins, hors apéro & café", "value": 34400 }
+    ],
+    "forPersons": "Pour 2 personnes",
+    "image": "/AdobeStock_59196237.png"
+  },
+  {
+    "id": 3,
+    "title": "Chèque cadeau",
+    "description": "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "priceOptions": [
+      { "label": "12,000€ hors boissons", "value": 12000 },
+      { "label": "34,400€ avec vins, hors apéro & café", "value": 34400 }
+    ],
+    "forPersons": "Pour 2 personnes",
+    "image": "/AdobeStock_59196237.png"
+  },
+  {
+    "id": 4,
+    "title": "Chèque cadeau",
+    "description": "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "priceOptions": [
+      { "label": "12,000€ hors boissons", "value": 12000 },
+      { "label": "34,400€ avec vins, hors apéro & café", "value": 34400 }
+    ],
+    "forPersons": "Pour 2 personnes",
+    "image": "/AdobeStock_59196237.png"
+  },
+  {
+    "id": 5,
+    "title": "Chèque cadeau",
+    "description": "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "priceOptions": [
+      { "label": "12,000€ hors boissons", "value": 12000 },
+      { "label": "34,400€ avec vins, hors apéro & café", "value": 34400 }
+    ],
+    "forPersons": "Pour 2 personnes",
+    "image": "/AdobeStock_59196237.png"
+  },
+  {
+    "id": 6,
+    "title": "Chèque cadeau",
+    "description": "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "priceOptions": [
+      { "label": "12,000€ hors boissons", "value": 12000 },
+      { "label": "34,400€ avec vins, hors apéro & café", "value": 34400 }
+    ],
+    "forPersons": "Pour 2 personnes",
+    "image": "/AdobeStock_59196237.png"
+  },
+  {
+    "id": 7,
+    "title": "Chèque cadeau",
+    "description": "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "priceOptions": [
+      { "label": "12,000€ hors boissons", "value": 12000 },
+      { "label": "34,400€ avec vins, hors apéro & café", "value": 34400 }
+    ],
+    "forPersons": "Pour 2 personnes",
+    "image": "/AdobeStock_59196237.png"
+  },
+  {
+    "id": 8,
+    "title": "Chèque cadeau",
+    "description": "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "priceOptions": [
+      { "label": "12,000€ hors boissons", "value": 12000 },
+      { "label": "34,400€ avec vins, hors apéro & café", "value": 34400 }
+    ],
+    "forPersons": "Pour 2 personnes",
+    "image": "/AdobeStock_59196237.png"
+  },
+  {
+    "id": 9,
+    "title": "Chèque cadeau",
+    "description": "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "priceOptions": [
+      { "label": "12,000€ hors boissons", "value": 12000 },
+      { "label": "34,400€ avec vins, hors apéro & café", "value": 34400 }
+    ],
+    "forPersons": "Pour 2 personnes",
+    "image": "/AdobeStock_59196237.png"
+  },
+  {
+    "id": 10,
+    "title": "Chèque cadeau",
+    "description": "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "priceOptions": [
+      { "label": "12,000€ hors boissons", "value": 12000 },
+      { "label": "34,400€ avec vins, hors apéro & café", "value": 34400 }
+    ],
+    "forPersons": "Pour 2 personnes",
+    "image": "/AdobeStock_59196237.png"
+  },
+  {
+    "id": 11,
+    "title": "Chèque cadeau",
+    "description": "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "priceOptions": [
+      { "label": "12,000€ hors boissons", "value": 12000 },
+      { "label": "34,400€ avec vins, hors apéro & café", "value": 34400 }
+    ],
+    "forPersons": "Pour 2 personnes",
+    "image": "/AdobeStock_59196237.png"
+  },
+  {
+    "id": 12,
+    "title": "Chèque cadeau",
+    "description": "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et douleur magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "priceOptions": [
+      { "label": "12,000€ hors boissons", "value": 12000 },
+      { "label": "34,400€ avec vins, hors apéro & café", "value": 34400 }
+    ],
+    "forPersons": "Pour 2 personnes",
+    "image": "/AdobeStock_59196237.png"
+  },
+  {
+    "id": 13,
+    "title": "Chèque cadeau",
+    "description": "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "priceOptions": [
+      { "label": "12,000€ hors boissons", "value": 12000 },
+      { "label": "34,400€ avec vins, hors apéro & café", "value": 34400 }
+    ],
+    "forPersons": "Pour 2 personnes",
+    "image": "/AdobeStock_59196237.png"
+  },
+  {
+    "id": 14,
+    "title": "Chèque cadeau",
+    "description": "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "priceOptions": [
+      { "label": "12,000€ hors boissons", "value": 12000 },
+      { "label": "34,400€ avec vins, hors apéro & café", "value": 34400 }
+    ],
+    "forPersons": "Pour 2 personnes",
+    "image": "/AdobeStock_59196237.png"
+  },
+  {
+    "id": 15,
+    "title": "Chèque cadeau",
+    "description": "Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "priceOptions": [
+      { "label": "12,000€ hors boissons", "value": 12000 },
+      { "label": "34,400€ avec vins, hors apéro & café", "value": 34400 }
+    ],
+    "forPersons": "Pour 2 personnes",
+    "image": "/AdobeStock_59196237.png"
+  }
+]

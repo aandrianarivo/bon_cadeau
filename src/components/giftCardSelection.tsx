@@ -5,325 +5,23 @@ import { useProgress } from "../context/ProgressContext";
 import { GiftCard } from "../types";
 import Image from "next/image";
 
-const giftCards: GiftCard[] = [
-  {
-    id: 1,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237.png",
-    category: "tous",
-  },
-  {
-    id: 2,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "formules-repas",
-  },
-  {
-    id: 3,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 4,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 5,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 6,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 7,
-    title: "aa cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 8,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 9,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 10,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 11,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 12,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 13,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 14,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 15,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 16,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 17,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 18,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 19,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 20,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 21,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 22,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 23,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 24,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 25,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 26,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 27,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 28,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 29,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-  {
-    id: 30,
-    title: "Chèque cadeau",
-    description:
-      "Excepté sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    price: "12,000€",
-    forPersons: "Pour 2 personnes",
-    image: "/AdobeStock_59196237@2x.png",
-    category: "repas-hebergement",
-  },
-];
+import giftCardsData from "../data/bon_cadeau.json";
+
+const giftCards: GiftCard[] = giftCardsData;
 
 const GiftCardSelection: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState<string>("tous");
-  const [currentPage, setCurrentPage] = useState<number>(1); // État pour la page actuelle
-  const cardsPerPage = 6; // 6 cartes par page
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const cardsPerPage = 6; 
   const { currentStep, setCurrentStep, setSelectedGiftCard } = useProgress();
   const router = useRouter();
 
-  // Filtrer les cartes selon le filtre actif
   const filteredGiftCards = giftCards.filter(
     (card) => activeFilter === "tous" || card.category === activeFilter
   );
 
-  // Calculer le nombre total de pages
   const totalPages = Math.ceil(filteredGiftCards.length / cardsPerPage);
 
-  // Calculer les cartes à afficher pour la page actuelle
   const startIndex = (currentPage - 1) * cardsPerPage;
   const endIndex = startIndex + cardsPerPage;
   const currentGiftCards = filteredGiftCards.slice(startIndex, endIndex);
@@ -334,7 +32,6 @@ const GiftCardSelection: React.FC = () => {
     router.push(`/gift-card/${id}`);
   };
 
-  // Fonctions pour naviguer entre les pages
   const handlePreviousPage = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
@@ -347,21 +44,17 @@ const GiftCardSelection: React.FC = () => {
     }
   };
 
-  // Fonction pour générer les éléments de pagination
   const renderPagination = () => {
     const paginationItems = [];
-    const maxVisiblePages = 3; // Afficher maximum 3 numéros de page à la fois
+    const maxVisiblePages = 3; 
 
-    // Calculer la plage de pages à afficher
     let startPage = Math.max(1, currentPage - 1);
     const endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
 
-    // Ajuster startPage si on est proche de la fin
     if (endPage - startPage + 1 < maxVisiblePages) {
       startPage = Math.max(1, endPage - maxVisiblePages + 1);
     }
 
-    // Ajouter les numéros de page
     for (let i = startPage; i <= endPage; i++) {
       paginationItems.push(
         <button
@@ -378,12 +71,11 @@ const GiftCardSelection: React.FC = () => {
       );
     }
 
-    // Ajouter les points de suspension si nécessaire
     if (endPage < totalPages) {
       paginationItems.push(
         <button
           key="ellipsis"
-          onClick={() => setCurrentPage(totalPages)} // Sauter à la dernière page
+          onClick={() => setCurrentPage(totalPages)} //to last page
           className="w-6 h-6 rounded-full flex items-center justify-center text-xs bg-white border border-brownlight text-brownlight"
         >
           ...
@@ -397,40 +89,49 @@ const GiftCardSelection: React.FC = () => {
   return (
     <>
       <div className="bg-light py-6">
-        {/* Filtres */}
-        <div className="container mx-auto flex justify-center space-x-4 mb-8">
-          {["tous", "formules-repas", "repas-hebergement", "repas-cadeau"].map((filter) => (
-            <button
-              key={filter}
-              onClick={() => {
-                setActiveFilter(filter);
-                setCurrentPage(1); // Réinitialiser la page à 1 lors du changement de filtre
-              }}
-              className={`px-4 py-2 rounded-full text-sm ${
-                activeFilter === filter
-                  ? "bg-brownlight text-white"
-                  : "border border-brownlight text-brownlight bg-white"
-              }`}
-            >
-              {filter === "tous"
-                ? "Tous"
-                : filter === "formules-repas"
-                ? "Formules repas"
-                : filter === "repas-hebergement"
-                ? "Repas & hébergement"
-                : "Repas & cadeau"}
-            </button>
-          ))}
+        <div className="container mx-auto mb-8">
+          <style jsx>{`
+            .hide-scrollbar {
+              -ms-overflow-style: none;
+              scrollbar-width: none;
+            }
+            .hide-scrollbar::-webkit-scrollbar {
+              display: none;
+            }
+          `}</style>
+          <div className="flex justify-start space-x-2 overflow-x-auto px-4 md:justify-center md:space-x-4 hide-scrollbar">
+            {["tous", "formules-repas", "repas-hebergement", "repas-cadeau"].map((filter) => (
+              <button
+                key={filter}
+                onClick={() => {
+                  setActiveFilter(filter);
+                  setCurrentPage(1); 
+                }}
+                className={`px-3 py-1 text-xs rounded-full whitespace-nowrap md:px-4 md:py-2 md:text-sm ${
+                  activeFilter === filter
+                    ? "bg-brownlight text-white"
+                    : "border border-brownlight text-brownlight bg-white"
+                }`}
+              >
+                {filter === "tous"
+                  ? "Tous"
+                  : filter === "formules-repas"
+                  ? "Formules repas"
+                  : filter === "repas-hebergement"
+                  ? "Repas & hébergement"
+                  : "Repas & cadeau"}
+              </button>
+            ))}
+          </div>
         </div>
 
-        {/* Cartes de bons cadeaux */}
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {currentGiftCards.map((card) => (
             <div
               key={card.id}
               className="bg-white rounded-2xl shadow-md overflow-hidden"
             >
-              <Image
+              <img
                 src={card.image}
                 alt={card.title}
                 className="w-full h-48 object-cover rounded-t-2xl"
@@ -470,37 +171,9 @@ const GiftCardSelection: React.FC = () => {
           ))}
         </div>
 
-        {/* Contrôles de pagination */}
         {totalPages > 1 && (
           <div className="container mx-auto flex justify-center items-center space-x-2 mt-8">
-            {/* Bouton Précédent */}
-            {/* <button
-              onClick={handlePreviousPage}
-              disabled={currentPage === 1}
-              className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${
-                currentPage === 1
-                  ? "bg-white border border-brownlight text-brownlight opacity-50 cursor-not-allowed"
-                  : "bg-white border border-brownlight text-brownlight"
-              }`}
-            >
-              {"<"}
-            </button> */}
-
-            {/* Numéros de page et points de suspension */}
             {renderPagination()}
-
-            {/* Bouton Suivant */}
-            {/* <button
-              onClick={handleNextPage}
-              disabled={currentPage === totalPages}
-              className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${
-                currentPage === totalPages
-                  ? "bg-white border border-brownlight text-brownlight opacity-50 cursor-not-allowed"
-                  : "bg-white border border-brownlight text-brownlight"
-              }`}
-            >
-              {">"}
-            </button> */}
           </div>
         )}
       </div>

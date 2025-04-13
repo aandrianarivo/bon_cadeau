@@ -5,7 +5,7 @@ export interface GiftCard {
   price: string;
   forPersons: string;
   image: string;
-  category: string; // Pour le filtrage (ex: "tous", "formules-repas", etc.)
+  category: string; // Pour le filtrage
 }
 
 export interface BuyerInfo {

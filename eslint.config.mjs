@@ -14,6 +14,7 @@ const eslintConfig = [
   {
     rules: {
       "@typescript-eslint/no-unused-vars": "off", // Désactive la règle pour les variables inutilisées
+      "react/no-unescaped-entities": "off"
     },
   },
 ];

@@ -4,9 +4,8 @@ import { useEffect, useState } from "react";
 
 const ProgressBar = () => {
   const { currentStep } = useProgress();
-  const [hydrated, setHydrated] = useState(false); // État pour vérifier l'hydratation
+  const [hydrated, setHydrated] = useState(false);
 
-  // S'assurer que le composant est hydraté avant de rendre les éléments dynamiques
   useEffect(() => {
     setHydrated(true);
   }, []);
@@ -18,23 +17,18 @@ const ProgressBar = () => {
     { label: "Imprimer votre bon", icon: "print" },
   ];
 
-  // Calculer la progression pour la ligne (en pourcentage)
   const progressWidth = ((currentStep - 1) / (steps.length - 1)) * 100;
 
-  // Si le composant n'est pas encore hydraté, utiliser une valeur par défaut stable
   if (!hydrated) {
     return (
       <div className="bg-whitebrown py-4">
         <div className="container mx-auto">
-          {/* Version desktop/tablette : Disposition statique pendant l'hydratation */}
           <div className="hidden md:flex justify-center items-center space-x-6">
             {steps.map((step, index) => (
               <div key={index} className="flex flex-col items-center relative w-[80px] h-[80px]">
-                {/* Cercle et icône */}
                 <div
                   className={`relative w-10 h-10 rounded-full flex items-center justify-center bg-custom-gray`}
                 >
-                  {/* Icône de l'étape */}
                   {step.icon === "gift" && (
                     <svg
                       width="20"
@@ -87,12 +81,10 @@ const ProgressBar = () => {
                   )}
                 </div>
 
-                {/* Texte sous le cercle */}
                 <span className="mt-2 text-sm text-center text-gray-500">
                   {step.label}
                 </span>
 
-                {/* Ligne de connexion */}
                 {index < steps.length - 1 && (
                   <div
                     className="absolute top-5 left-1/2 transform translate-x-[20px] w-[72px] h-px border-t border-dashed"
@@ -110,9 +102,8 @@ const ProgressBar = () => {
   return (
     <div className="bg-whitebrown py-4">
       <div className="container mx-auto">
-        {/* Version mobile : Barre de progression compacte */}
+        {/* Version mobile  */}
         <div className="md:hidden flex items-center justify-between relative px-4">
-          {/* Ligne de progression en arrière-plan */}
           <div className="absolute top-1/2 left-0 right-0 h-1 bg-custom-gray transform -translate-y-1/2">
             <div
               className="h-full bg-brownlight transition-all duration-300 ease-in-out"
@@ -120,11 +111,10 @@ const ProgressBar = () => {
             ></div>
           </div>
 
-          {/* Cercles pour chaque étape */}
           {steps.map((step, index) => (
             <div key={index} className="relative flex flex-col items-center z-10 group">
               <div
-                className={`w-6 h-6 rounded-full flex items-center justify-center transition-colors duration-300${
+                className={`relative w-6 h-6 rounded-full flex items-center justify-center transition-colors duration-300 ${
                   currentStep > index + 1
                     ? "bg-green-500 border-2 border-white"
                     : currentStep === index + 1
@@ -133,25 +123,26 @@ const ProgressBar = () => {
                 }`}
               >
                 {currentStep > index + 1 ? (
-                  <svg
-                    width="12"
-                    height="12"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="white"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M20 6L9 17l-5-5" />
-                  </svg>
+                  <div className="relative w-6 h-6 rounded-full flex items-center justify-center">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="green" 
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M20 6L9 17l-5-5" />
+                    </svg>
+                  </div>
                 ) : (
                   <span className="text-white text-xs font-semibold">
                     {index + 1}
                   </span>
                 )}
               </div>
-              {/* Tooltip au survol/toucher prolongé */}
               <div className="absolute top-8 bg-gray-800 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                 {step.label}
               </div>
@@ -159,11 +150,9 @@ const ProgressBar = () => {
           ))}
         </div>
 
-        {/* Version desktop/tablette : Disposition originale */}
         <div className="hidden md:flex justify-center items-center space-x-6">
           {steps.map((step, index) => (
             <div key={index} className="flex flex-col items-center relative w-[80px] h-[80px]">
-              {/* Cercle et icône */}
               <div
                 className={`relative w-10 h-10 rounded-full flex items-center justify-center ${
                   currentStep >= index + 1
@@ -171,7 +160,6 @@ const ProgressBar = () => {
                     : "bg-custom-gray"
                 }`}
               >
-                {/* Icône de l'étape */}
                 {step.icon === "gift" && (
                   <svg
                     width="20"
@@ -223,7 +211,6 @@ const ProgressBar = () => {
                   </svg>
                 )}
 
-                {/* Coche pour les étapes complétées */}
                 {currentStep > index + 1 && (
                   <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-white border-2 border-green-500 flex items-center justify-center">
                     <svg
@@ -251,7 +238,6 @@ const ProgressBar = () => {
                 {step.label}
               </span>
 
-              {/* Ligne de connexion */}
               {index < steps.length - 1 && (
                 <div
                   className="absolute top-5 left-1/2 transform translate-x-[20px] w-[72px] h-px border-t border-dashed"
