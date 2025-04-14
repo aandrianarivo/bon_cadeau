@@ -7,6 +7,7 @@
   --text-brownlight: #B7833D;
   --light: #FFFFFF;
   --custom-gray: #D9D9D9;
+  --whitebrown:#FCF5E7;
 }
 
 @theme inline {
@@ -18,6 +19,7 @@
   --color-brownlight: var(--text-brownlight); 
   --color-light: var(--light);
   --color-custom-gray: var(--gray);
+  --color-whitebrown: var(--whitebrown);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,17 +1,15 @@
 'use client';
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
-// import { useProgress } from "../../context/ProgressContext";
+import Link from "next/link";
 import { PDFDownloadLink } from "@react-pdf/renderer";
 import { useProgress } from "@/src/context/ProgressContext";
 import GiftCardPDF from "@/src/components/giftCardPdf";
-// import GiftCardPDF from "../../components/GiftCardPDF";
 
 const Print = () => {
   const { currentStep, setCurrentStep, selectedGiftCard, giftCardDetails } = useProgress();
   const router = useRouter();
 
-  // Générer un numéro de bon cadeau aléatoire
   const giftCardNumber = Math.floor(100000 + Math.random() * 900000).toString();
 
   useEffect(() => {
@@ -22,125 +20,30 @@ const Print = () => {
     setCurrentStep(4);
   }, [selectedGiftCard, giftCardDetails, router, setCurrentStep]);
 
-  if (!giftCardDetails) return null;
+  const handleBackToStep3 = () => {
+    setCurrentStep(3);
+  };
 
-  const steps = [
-    { label: "Choisissez un bon", icon: "gift" },
-    { label: "Informations sur le bon", icon: "info" },
-    { label: "Paiement", icon: "payment" },
-    { label: "Imprimer votre bon", icon: "print" },
-  ];
+  if (!giftCardDetails) return null;
 
   return (
     <div className="bg-white py-6">
-      {/* Barre de progression */}
-      <div className="container mx-auto flex justify-center items-center space-x-4 mb-8">
-        {steps.map((step, index) => (
-          <div key={index} className="flex items-center">
-            <div
-              className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                currentStep >= index + 1 ? "bg-brownlight" : "bg-gray-200"
-              }`}
-            >
-              {currentStep > index + 1 ? (
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M20 6L9 17l-5-5" />
-                </svg>
-              ) : step.icon === "gift" ? (
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke={currentStep === index + 1 ? "white" : "gray"}
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <rect x="3" y="8" width="18" height="13" rx="2" ry="2" />
-                  <path d="M3 10h18" />
-                  <path d="M12 8v13" />
-                  <path d="M7 3c1.5 2 3 3 5 3s3.5-1 5-3" />
-                  <path d="M7 3c1.5 2 3 3 5 3s3.5-1 5-3" />
-                </svg>
-              ) : step.icon === "info" ? (
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke={currentStep === index + 1 ? "white" : "gray"}
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-                  <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
-                </svg>
-              ) : step.icon === "payment" ? (
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke={currentStep === index + 1 ? "white" : "gray"}
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M8 14s1.5 2 4 2 4-2 4-2" />
-                  <path d="M9 9h.01" />
-                  <path d="M15 9h.01" />
-                </svg>
-              ) : (
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke={currentStep === index + 1 ? "white" : "gray"}
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
-                  <path d="M3 6h18" />
-                  <path d="M16 10a4 4 0 0 1-8 0" />
-                </svg>
-              )}
-            </div>
-            <span
-              className={`ml-2 text-sm ${
-                currentStep >= index + 1 ? "text-brownlight" : "text-gray-500"
-              }`}
-            >
-              {step.label}
-            </span>
-            {index < steps.length - 1 && (
-              <div className="flex-1 h-px border-t border-dashed border-gray-300 mx-4"></div>
-            )}
-          </div>
-        ))}
+      <div className="container mx-auto mb-6">
+        <Link
+          href={`/payment`}
+          onClick={handleBackToStep3}
+          className="text-brownlight text-sm hover:underline"
+        >
+          ← Revenir aux informations sur le bon
+        </Link>
       </div>
 
-      {/* Numéro du bon cadeau */}
       <div className="container mx-auto text-center mb-8">
         <h2 className="text-2xl font-semibold text-brown">
           Bon cadeau n°{giftCardNumber}
         </h2>
       </div>
 
-      {/* Prévisualisation du bon cadeau */}
       <div className="container mx-auto flex justify-center mb-8">
         <div className="bg-white shadow-lg rounded-lg p-6 flex items-center space-x-6">
           <div>
@@ -153,13 +56,16 @@ const Print = () => {
             </p>
           </div>
           <div>
+            <svg fill="none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.5 13.5V5.41a1 1 0 0 0-.3-.7L9.8.29A1 1 0 0 0 9.08 0H1.5v13.5A2.5 2.5 0 0 0 4 16h8a2.5 2.5 0 0 0 2.5-2.5m-1.5 0v-7H8v-5H3v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1M9.5 5V2.12L12.38 5zM5.13 5h-.62v1.25h2.12V5zm-.62 3h7.12v1.25H4.5zm.62 3h-.62v1.25h7.12V11z"
+                clipRule="evenodd"
+                fill="#666"
+                fillRule="evenodd"
+              />
+            </svg>
             <img
-              src="https://via.placeholder.com/100x50?text=Votre+Logo"
-              alt="Logo"
-              className="w-24 h-12 mb-4"
-            />
-            <img
-              src="https://via.placeholder.com/80?text=QR+Code"
+              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.475sj6R0A1guhH7edkpWhQHaHa%26pid%3DApi&f=1&ipt=4bef19b469860196dd04b83ce21d51401262286f4b668e7abca39bb7399455a1&ipo=images"
               alt="QR Code"
               className="w-20 h-20"
             />
@@ -167,7 +73,6 @@ const Print = () => {
         </div>
       </div>
 
-      {/* Bouton de téléchargement */}
       <div className="container mx-auto text-center">
         <PDFDownloadLink
           document={

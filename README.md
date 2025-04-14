@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Installation du projet:
 
-## Getting Started
+```bash
+git clone https://github.com/aandrianarivo/bon_cadeau.git
+```
 
-First, run the development server:
+```bash
+cd nom du projet
+```
 
+
+```bash
+pnpm install
+# or 
+npm install 
+```
 ```bash
 npm run dev
 # or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✅ Avantages de Next.js
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Render côté serveur (SSR) et statique (SSG)**
+   - Améliore le **référencement naturel (SEO)**
+   - Meilleures performances et rapidité de chargement
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Routing intégré**
+   - Pas besoin de configurer `react-router`, chaque fichier dans `/pages` devient une route
 
-## Learn More
+3. **Optimisation automatique**
+   - Code splitting, lazy loading, mise en cache intégrée
 
-To learn more about Next.js, take a look at the following resources:
+4. **Support TypeScript**
+   - Typage fort pour plus de sécurité et de lisibilité du code
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. **API routes intégrées**
+   - Possibilité de créer une API directement dans le projet sans serveur externe
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+6. **Déploiement facile avec Vercel**
+   - Un clic pour mettre en ligne, avec prévisualisation automatique des branches
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 Avantages de Tailwind CSS
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Développement rapide**
+   - Classes utilitaires = écrire du CSS directement dans le JSX sans créer de fichiers `.css` séparés
+
+2. **Design responsive simple**
+   - Des breakpoints mobiles/tablettes/desktop intégrés (`sm`, `md`, `lg`, `xl`, etc.)
+
+3. **Design system cohérent**
+   - Palette de couleurs, typographie, ombrages, espacement prédéfinis
+
+4. **Personnalisable**
+   - Fichier `tailwind.config.js` pour adapter les styles à ton branding
+
+5. **Moins de CSS "mort"**
+   - Purge automatique des classes non utilisées = performances optimisées
+
+---
+
+## 🔧 Stack technique
+
+| Outil           | Utilité                          |
+|----------------|----------------------------------|
+| Next.js         | Framework React fullstack        |
+| TypeScript      | Typage statique                  |
+| Tailwind CSS    | Design responsive avec classes utilitaires |
+| ESLint + Prettier | Code propre et formaté         |
+
+
+## ⏱ Heures passées sur le projet
+
+| Phase                     | Durée estimée |
+|--------------------------|---------------|
+| Reprise des bases de Next js| 3h            |
+| Setup Next.js + Tailwind | 3h            |
+| Intégration du design de base | 4h            |
+| Composants UI            | 3h            |
+| Corrections des différents bugs   | 3h          |
+| Responsive      | 1.5h          |
+| **Total**                | **17.5h**        |
