@@ -50,14 +50,7 @@ pnpm dev
 
 2. **Design responsive simple**
    - Des breakpoints mobiles/tablettes/desktop intégrés (`sm`, `md`, `lg`, `xl`, etc.)
-
-3. **Design system cohérent**
-   - Palette de couleurs, typographie, ombrages, espacement prédéfinis
-
-4. **Personnalisable**
-   - Fichier `tailwind.config.js` pour adapter les styles à ton branding
-
-5. **Moins de CSS "mort"**
+3. **Moins de CSS "mort"**
    - Purge automatique des classes non utilisées = performances optimisées
 
 ---
@@ -83,3 +76,6 @@ pnpm dev
 | Corrections des différents bugs   | 3h          |
 | Responsive      | 1.5h          |
 | **Total**                | **17.5h**        |
+
+## Demo
+https://bon-cadeau-beta.vercel.app/
